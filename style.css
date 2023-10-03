@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    background-color: #ddeff0;
+}   
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.book-input{
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.book-input h1{
+    width: 300px;
+    margin-top: 20px;
+}
+.book-input form{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.book-input input{
+    border-radius: 10px;
+    border: none;
+
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+}
+
+.book-input input[type="submit"]{
+    width: 100px;
+    border: 2px solid black;
+}
+
+#cb-cont{
+    color: #757575;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#cb-cont input{
+    height: 20px;
+    width: 20px;
+}
+
+
+#book-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+    width: 100%;
+}
+@media only screen and (max-width: 600px){
+    #book-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+
+#book{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+
+    height: 400px;
+    background-color: #356169;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.true{
+    background-color: green;
+}
+.false{
+    background-color: red;
+}
+
+#book-read{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#book-delete{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#book-read:active{
+    filter: brightness(70%);
+}
+
+#book-delete:active{
+    filter: brightness(70%);
+}
+
+#book-delete:hover{
+    box-shadow: none;
+}
+
+#book-read:hover{
+    box-shadow: none;
+}
