@@ -4,6 +4,24 @@ const LIBRARY = document.getElementById("book-container")
 
 const myLibrary = [];
 
+// function Book(title,author,pages,read,id){
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+//   this.id = id;
+// }
+
+class Book{
+  constructor(title,author,pages,read,id){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.id = id;
+  }
+}
+
 
 function changeRead(element,id) {
   if (element.classList.contains("false")) {
@@ -44,13 +62,7 @@ function createBook(title,author,pages,read,id) {
   
 }
 
-function Book(title,author,pages,read,id){
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.id = id;
-}
+
 
 function addBookToLibrary(title,author,pages,read,id) {
   myLibrary.push(new Book(title,author,pages,read,id));
